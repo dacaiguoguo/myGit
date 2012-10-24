@@ -29,6 +29,7 @@
 		025733991637ED600015D7B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025733661637ED5F0015D7B6 /* Foundation.framework */; };
 		025733A11637ED600015D7B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0257339F1637ED600015D7B6 /* InfoPlist.strings */; };
 		025733A41637ED600015D7B6 /* gitEGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 025733A31637ED600015D7B6 /* gitEGoTests.m */; };
+		025733AF1637EEBA0015D7B6 /* SYGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 025733AE1637EEBA0015D7B6 /* SYGView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		025733A01637ED600015D7B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		025733A21637ED600015D7B6 /* gitEGoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gitEGoTests.h; sourceTree = "<group>"; };
 		025733A31637ED600015D7B6 /* gitEGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gitEGoTests.m; sourceTree = "<group>"; };
+		025733AD1637EEBA0015D7B6 /* SYGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGView.h; sourceTree = "<group>"; };
+		025733AE1637EEBA0015D7B6 /* SYGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				025733741637ED600015D7B6 /* SYGAppDelegate.m */,
 				0257337C1637ED600015D7B6 /* SYGFirstViewController.h */,
 				0257337D1637ED600015D7B6 /* SYGFirstViewController.m */,
+				025733AD1637EEBA0015D7B6 /* SYGView.h */,
+				025733AE1637EEBA0015D7B6 /* SYGView.m */,
 				0257337F1637ED600015D7B6 /* first.png */,
 				025733811637ED600015D7B6 /* first@2x.png */,
 				025733831637ED600015D7B6 /* SYGSecondViewController.h */,
@@ -300,6 +305,7 @@
 				025733751637ED600015D7B6 /* SYGAppDelegate.m in Sources */,
 				0257337E1637ED600015D7B6 /* SYGFirstViewController.m in Sources */,
 				025733851637ED600015D7B6 /* SYGSecondViewController.m in Sources */,
+				025733AF1637EEBA0015D7B6 /* SYGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
