@@ -54,7 +54,12 @@
 #endif
     NSString* gitfile=[[NSBundle mainBundle] pathForResource:@"git" ofType:@"txt"];
     NSString* gitinfo=[NSString stringWithContentsOfFile:gitfile encoding:NSUTF8StringEncoding error:NULL];
-    NSString *debugInfo = [NSString stringWithFormat:@"%@%@",str,gitinfo];
+    NSMutableString *suGitInfo = [NSMutableString string];
+    NSRange dateRange = [gitinfo rangeOfString:@"Date:"];
+    if (dateRange.location!=NSNotFound) {
+        suGitInfo = [[gitinfo substringToIndex:dateRange.location+36] mutableCopy];
+    }
+    NSString *debugInfo = [NSString stringWithFormat:@"%@%@",str,suGitInfo];
     self.lbFirstTextView.text = debugInfo;
 	// Do any additional setup after loading the view, typically from a nib.
 }

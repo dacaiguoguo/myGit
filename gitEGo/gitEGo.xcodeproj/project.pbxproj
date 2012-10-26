@@ -334,7 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "git log >git.txt";
+			shellScript = "git log --stat --summary >git.txt";
 		};
 		025733931637ED600015D7B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
