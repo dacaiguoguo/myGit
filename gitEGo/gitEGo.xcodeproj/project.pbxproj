@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0210C5E7163A2F5F0092CBC9 /* git.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0210C5E6163A2F5F0092CBC9 /* git.txt */; };
 		025733651637ED5F0015D7B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025733641637ED5F0015D7B6 /* UIKit.framework */; };
 		025733671637ED5F0015D7B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025733661637ED5F0015D7B6 /* Foundation.framework */; };
 		025733691637ED5F0015D7B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025733681637ED5F0015D7B6 /* CoreGraphics.framework */; };
@@ -30,6 +31,9 @@
 		025733A11637ED600015D7B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0257339F1637ED600015D7B6 /* InfoPlist.strings */; };
 		025733A41637ED600015D7B6 /* gitEGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 025733A31637ED600015D7B6 /* gitEGoTests.m */; };
 		025733AF1637EEBA0015D7B6 /* SYGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 025733AE1637EEBA0015D7B6 /* SYGView.m */; };
+		02A9A43F163A3D6B006C0AC9 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A9A43A163A3D6B006C0AC9 /* NSString+MD5Addition.m */; };
+		02A9A440163A3D6B006C0AC9 /* NSString+SHAAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A9A43C163A3D6B006C0AC9 /* NSString+SHAAddition.m */; };
+		02A9A441163A3D6B006C0AC9 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A9A43E163A3D6B006C0AC9 /* UIDevice+IdentifierAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0210C5E6163A2F5F0092CBC9 /* git.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git.txt; sourceTree = SOURCE_ROOT; };
 		025733601637ED5F0015D7B6 /* gitEGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitEGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025733641637ED5F0015D7B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		025733661637ED5F0015D7B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +79,12 @@
 		025733A31637ED600015D7B6 /* gitEGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gitEGoTests.m; sourceTree = "<group>"; };
 		025733AD1637EEBA0015D7B6 /* SYGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGView.h; sourceTree = "<group>"; };
 		025733AE1637EEBA0015D7B6 /* SYGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGView.m; sourceTree = "<group>"; };
+		02A9A439163A3D6B006C0AC9 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		02A9A43A163A3D6B006C0AC9 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		02A9A43B163A3D6B006C0AC9 /* NSString+SHAAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHAAddition.h"; sourceTree = "<group>"; };
+		02A9A43C163A3D6B006C0AC9 /* NSString+SHAAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHAAddition.m"; sourceTree = "<group>"; };
+		02A9A43D163A3D6B006C0AC9 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		02A9A43E163A3D6B006C0AC9 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +144,7 @@
 		0257336A1637ED5F0015D7B6 /* gitEGo */ = {
 			isa = PBXGroup;
 			children = (
+				0210C5E6163A2F5F0092CBC9 /* git.txt */,
 				025733731637ED600015D7B6 /* SYGAppDelegate.h */,
 				025733741637ED600015D7B6 /* SYGAppDelegate.m */,
 				0257337C1637ED600015D7B6 /* SYGFirstViewController.h */,
@@ -141,6 +153,7 @@
 				025733AE1637EEBA0015D7B6 /* SYGView.m */,
 				0257337F1637ED600015D7B6 /* first.png */,
 				025733811637ED600015D7B6 /* first@2x.png */,
+				02A9A438163A3D6A006C0AC9 /* YKUDID */,
 				025733831637ED600015D7B6 /* SYGSecondViewController.h */,
 				025733841637ED600015D7B6 /* SYGSecondViewController.m */,
 				025733861637ED600015D7B6 /* second.png */,
@@ -185,6 +198,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		02A9A438163A3D6A006C0AC9 /* YKUDID */ = {
+			isa = PBXGroup;
+			children = (
+				02A9A439163A3D6B006C0AC9 /* NSString+MD5Addition.h */,
+				02A9A43A163A3D6B006C0AC9 /* NSString+MD5Addition.m */,
+				02A9A43B163A3D6B006C0AC9 /* NSString+SHAAddition.h */,
+				02A9A43C163A3D6B006C0AC9 /* NSString+SHAAddition.m */,
+				02A9A43D163A3D6B006C0AC9 /* UIDevice+IdentifierAddition.h */,
+				02A9A43E163A3D6B006C0AC9 /* UIDevice+IdentifierAddition.m */,
+			);
+			path = YKUDID;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 025733A71637ED600015D7B6 /* Build configuration list for PBXNativeTarget "gitEGo" */;
 			buildPhases = (
+				0228A82C163A2E5B007EBBAA /* ShellScript */,
+				0257335E1637ED5F0015D7B6 /* Resources */,
 				0257335C1637ED5F0015D7B6 /* Sources */,
 				0257335D1637ED5F0015D7B6 /* Frameworks */,
-				0257335E1637ED5F0015D7B6 /* Resources */,
+				0210C5FE163A303D0092CBC9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -267,6 +295,7 @@
 				025733891637ED600015D7B6 /* second@2x.png in Resources */,
 				0257338C1637ED600015D7B6 /* SYGFirstViewController.xib in Resources */,
 				0257338F1637ED600015D7B6 /* SYGSecondViewController.xib in Resources */,
+				0210C5E7163A2F5F0092CBC9 /* git.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +310,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0210C5FE163A303D0092CBC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo -n \"\" >git.txt";
+		};
+		0228A82C163A2E5B007EBBAA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git log >git.txt";
+		};
 		025733931637ED600015D7B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +361,9 @@
 				0257337E1637ED600015D7B6 /* SYGFirstViewController.m in Sources */,
 				025733851637ED600015D7B6 /* SYGSecondViewController.m in Sources */,
 				025733AF1637EEBA0015D7B6 /* SYGView.m in Sources */,
+				02A9A43F163A3D6B006C0AC9 /* NSString+MD5Addition.m in Sources */,
+				02A9A440163A3D6B006C0AC9 /* NSString+SHAAddition.m in Sources */,
+				02A9A441163A3D6B006C0AC9 /* UIDevice+IdentifierAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +442,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -403,7 +461,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -416,6 +474,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gitEGo/gitEGo-Prefix.pch";
 				INFOPLIST_FILE = "gitEGo/gitEGo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -427,6 +486,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gitEGo/gitEGo-Prefix.pch";
 				INFOPLIST_FILE = "gitEGo/gitEGo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -485,6 +545,7 @@
 				025733A91637ED600015D7B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		025733AA1637ED600015D7B6 /* Build configuration list for PBXNativeTarget "gitEGoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +554,7 @@
 				025733AC1637ED600015D7B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

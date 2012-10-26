@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SYGFirstViewController : UIViewController
+@property (retain, nonatomic) IBOutlet UITextView *lbFirstTextView;
 
 @end

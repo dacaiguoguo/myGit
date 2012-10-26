@@ -23,10 +23,39 @@
     }
     return self;
 }
-							
+/*
+-(IBAction) showDebugInfo:(id) sender{
+	NSAutoreleasePool* pool=[[NSAutoreleasePool alloc] init];
+	NSString* str=@"";
+#ifdef DEBUG
+	str=@"build is debug\n";
+#else
+	str=@"build is release\n";
+#endif
+    VANCLAppDelegate* appdelegate=(VANCLAppDelegate*) [[UIApplication sharedApplication] delegate];
+	NSString* apnstoken=[appdelegate apnsDeviceToken];
+    NSString* svninfofile=[[NSBundle mainBundle] pathForResource:@"svninfo" ofType:@"txt"];
+    NSString* svninfo=[NSString stringWithContentsOfFile:svninfofile encoding:NSUTF8StringEncoding error:NULL];
+	NSString* debugInfo=[NSString stringWithFormat:@"%@sourceid=%@\nudid=%@\n apnstoken=%@ \n\n\n svninfo=%@\n\n\n\n",str,sourceId(),[[UIDevice currentDevice] uniqueDeviceIdentifier], apnstoken,svninfo];
+	
+	self.debugInfoText.hidden=NO;
+	self.debugInfoText.text=debugInfo;
+	[pool release];
+}
+*/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *str = @"";
+#ifdef DEBUG
+	str=@"build is debug\n";
+#else
+	str=@"build is release\n";
+#endif
+    NSString* gitfile=[[NSBundle mainBundle] pathForResource:@"git" ofType:@"txt"];
+    NSString* gitinfo=[NSString stringWithContentsOfFile:gitfile encoding:NSUTF8StringEncoding error:NULL];
+    NSString *debugInfo = [NSString stringWithFormat:@"%@%@",str,gitinfo];
+    self.lbFirstTextView.text = debugInfo;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -36,4 +65,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_lbFirstTextView release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setLbFirstTextView:nil];
+    [super viewDidUnload];
+}
 @end
